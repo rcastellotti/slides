@@ -1,0 +1,583 @@
+\documentclass[xcolor=dvipsnames,aspectratio=169]{beamer}
+
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref,graphicx,tikz,soul}
+\usetheme{forme}
+%\usecolortheme{beetle}
+\graphicspath{{../images/}}
+\title{FOSS: free open source software} 
+\author{Roberto Castellotti}
+\date{\today}
+\institute{L.S.S G.D Cassini}
+\setbeamertemplate{navigation symbols}[]
+
+\begin{document}
+
+\begin{frame}[plain]
+    \begin{tikzpicture}[remember picture,overlay] 
+        \node[at=(current page.center)] {
+            \includegraphics[width=\paperwidth, height=\paperheight]{main.png}
+        };
+    \end{tikzpicture}   
+\end{frame}
+\begin{frame}[plain]
+    \begin{figure} 
+            \includegraphics[width=0.7\textwidth]{leo}
+    
+    \end{figure}   
+\end{frame}
+\begin{frame} 
+    \frametitle{disclaimer}
+        \begin{columns} 
+            \begin{column}{0.5\textwidth}
+                \begin{center}
+            \includegraphics[width=0.5\textwidth]{discl.jpg}
+                \end{center}
+        \end{column}
+        \begin{column}{0.5\textwidth}  
+                \begin{itemize}[<+->]
+                    \item eppol $\rightarrow$ appol
+                    \item linux $\rightarrow$ GNU/Linux
+                \end{itemize}
+            \end{column}
+        \end{columns}
+    \end{frame}
+
+
+\begin{frame}
+    \frametitle{COSA NON SIGNIFICA FOSS}
+        \begin{itemize}[<+->]
+            \item "freeware", "shareware" nè "freemium"
+            \item software gratuito
+            \item software a livello dilettantistico
+        \end{itemize}
+		
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{COSA SIGNIFICA FOSS}
+        \begin{itemize}[<+->]
+            \item free software + open source software 
+            \item software libero, "free as freedom not free as in free beer"
+            \item software sottoposto a certe licenze (GPL,MIT, Apache)
+            \item software modificabile a piacimento dall' utente finale
+        \end{itemize}
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{SOFTWARE PROPRIETARIO}
+        \begin{itemize}[<+->]
+            \item software privato, non libero o closed source
+            \item software sottoposto a licenze che consentono al beneficiario l' utilizzo sotto particolari restrizioni (modifica/condivisione/studio)
+            \item viene distribuito solamente il codice binario tenendo segreto il sorgente (segreto commerciale)
+            \item è comunque possibile disassemblare il codice binario ma è contro la licenza, ed è complesso)
+        \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{COME FUNZIONA UN PROGRAMMA IN C}
+        \begin{figure}
+            \includegraphics[width=0.4\textwidth]{c}
+        \end{figure}
+\end{frame}
+
+\begin{frame}
+    \frametitle{MA LIBERO IN CHE SENSO?}
+        \begin{itemize}[<+->]
+            \item libero nel senso che l' utente finale fa quello che vuole
+            \item "software libero" $\neq$ "non-commerciale", può quindi essere venduto
+        \end{itemize}
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{LIBERTA' ESSENZIALI DEL SOFTWARE LIBERO}
+        \begin{center}
+            \includegraphics[scale=0.39]{freedoms.png}
+        \end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{COSI' PARLÒ RICHARD STALLMAN}
+        The term “open source” has been further stretched by its application to other activities, such as government, education, and science, where there is no such thing as source code, and where criteria for software licensing are simply not pertinent. The only thing these activities have in common is that they somehow invite people to participate. They stretch the term so far that it only means “participatory” or “transparent”, or less than that. At worst, it has become a vacuous buzzword.
+\end{frame}
+
+%--------------------------------------------------------------------------------------
+\begin{frame}
+    \begin{tikzpicture}[remember picture,overlay]
+        \node[at=(current page.center)] {
+            \includegraphics[width=\paperwidth, height=\paperheight]{personaggi}
+        };
+    \end{tikzpicture}
+\end{frame}
+
+\begin{frame}
+    \begin{figure}
+        \includegraphics[width=0.6\textwidth]{ritchie1}
+        \caption{Dennis Ritchie}
+    \end{figure}
+\end{frame}
+\begin{frame}
+    \begin{figure}
+        \includegraphics[width=0.47\textwidth]{thompson}
+        \caption{Ken Thompson}
+    \end{figure}
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{DENNIS RITCHIE E KEN THOMPSON}
+        \begin{itemize}[<+->]
+            \item nel 1972 sviluppano il linguaggio C ai Bell Labs
+            \item usano questo linguaggio per riscrivere UNIX 
+            \item K\&R scrivono la bibbia, "The C programming language"
+        \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \begin{figure}
+        \includegraphics[width=0.29\textwidth]{bibbia.jpg}
+        \caption{La Bibbia, "The C programming language"}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+    \frametitle{LA COPPIA CHE SCOPPIA}
+    Throughout the 1970s, Thompson and Ritchie collaborated on the Unix operating system; they were so influential on Research Unix that Doug McIlroy later wrote:
+    \vspace{5mm}
+
+    \Large{"The names of Ritchie and Thompson may safely be assumed to be attached to almost everything not otherwise attributed."}
+\end{frame}
+ 
+\begin{frame}
+    \begin{figure}
+        \includegraphics[width=0.6\textwidth]{rms1}
+        \caption{RMS, Richard Matthew Stallman, Julian Assange}
+    \end{figure}
+\end{frame}
+\begin{frame}
+    \begin{figure}
+        \includegraphics[width=0.45\textwidth]{rms2}
+        \caption{RMS, Richard Matthew Stallman}
+    \end{figure}
+\end{frame}
+\begin{frame}
+    \begin{figure}
+        \includegraphics[width=0.77\textwidth]{rms3}
+        \caption{RMS, Richard Matthew Stallman}
+    \end{figure}
+\end{frame}
+\begin{frame}
+    \begin{figure}
+        \includegraphics[width=0.69\textwidth]{rms6}
+        \caption{RMS, Richard Matthew Stallman}
+    \end{figure}
+\end{frame}
+\begin{frame}
+    \begin{figure}
+        \includegraphics[width=0.43\textwidth]{hagrid}
+        \caption{\st{RMS, Richard Matthew Stallman} Hagrid}
+    \end{figure}
+    
+\end{frame}
+\begin{frame}
+    \begin{figure}
+        \includegraphics[width=0.65\textwidth]{rms}
+        \caption{RMS, Richard Matthew Stallman}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+    \frametitle{rms, RICHARD MATTHEW STALLMAN}
+        \begin{itemize}[<+->]
+            \item nel 1983 avvia il progetto GNU
+            \item nel 1985 fonda la Free Software Foundation (FSF)
+            \item nel 1989 crea la GNU General Public License
+        \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \begin{figure}
+        \includegraphics[width=0.6\textwidth]{xerox}
+        \caption{Xerox 9700 aka dove tutto è cominciato}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+    \frametitle{LINUS TORVALDS}
+    \begin{figure}
+        \includegraphics[width=0.65\textwidth]{torvalds}
+    \end{figure}
+\end{frame}
+\begin{frame}
+    \frametitle{LINUS TORVALDS E NVIDIA}
+    \begin{figure}
+        \includegraphics[width=0.76\textwidth]{nvidia_fuck}
+    \end{figure}
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{LINUS TORVALDS}
+        \begin{itemize}[<+->]
+            \item nasce nel 1969
+            \item nel 1991 rilascia la prima versione di Linux
+            \item nel 2001 rilascia GIT
+            \item nel 2011 comincia lo sviluppo di Subsurface assieme a Dirk Hondel
+        \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{GROSSI PROGETTI FOSS}
+        \begin{itemize}[<+->]
+            \item GNU/Linux
+            \item Git 
+            \item Firefox
+            \item Visual Studio Code 
+            \item la maggior parte dei programmi per linux 
+            \item moltissimi linguaggi di programmazione + \TeX e \LaTeX
+        \end{itemize}
+\end{frame}
+
+
+\begin{frame}
+    \begin{figure}
+        \begin{center}
+        \includegraphics[width=\textwidth]{latex}
+        \caption{la slide precedente in .tex }
+        \end{center}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+tutte le applicazioni/siti/tool di enti pubblici  dovrebbero essere quantomeno opensource   
+    \begin{figure}
+        \includegraphics[width=\textwidth]{andre}
+    \end{figure}
+\end{frame}
+%-------------------------------------------------------------------------------------
+
+\begin{frame}
+    \frametitle{ANATOMIA DI UN SISTEMA OPERATIVO}
+    \begin{figure}
+        \includegraphics[width=0.6\textwidth]{explainer}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+    \begin{tikzpicture}[remember picture,overlay]
+        \node[at=(current page.center)] {
+            \includegraphics[width=\paperwidth, height=\paperheight]{unix.png}
+        };
+    \end{tikzpicture}   
+\end{frame}
+
+\begin{frame}
+    \frametitle{STORIA DI UNIX}
+        UNIX inizialmente funzionava solo su un' architettura (PDP-7)
+        \vspace{10mm}
+        \begin{itemize}[<+->] 
+            \item UNIX nasce nel 1969 nei Bell Laboratories (AT\&T) (assembly)
+            \item UNIX viene distribuito gratuitamente (royalty, non era legato al business primario, le telecomunicazioni)
+            \item nel 1977 nasce BSD in California a Berkeley
+        \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \begin{figure}
+        \begin{center}
+            \includegraphics[width=0.7\textwidth]{assembly.png}
+            \caption {Assembly Language}
+        \end{center}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+    \begin{figure}
+        \begin{center}
+        \includegraphics[width=0.5\textwidth]{pdp7.jpg}
+        \caption{PDP-7 microcomputer (1965, 72k \$)}
+        \end{center}
+    \end{figure}
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{STORIA DI UNIX}
+        \begin{itemize}[<+->] 
+                \item nell' arco degli anni 1969-1973 viene riscritto in C il kernel da Thompson e Ritchie (primo software che funziona in ambienti diversi) 
+        \end{itemize}
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{THE UNIX WAY}
+        \begin{itemize}[<+->]
+            \item ogni programma fa una cosa e la fa bene
+            \item output di un programma $\rightarrow$ input di un altro
+            \item il software viene provato e condiviso subito
+            \item non si "reinventa la ruota" ogni volta
+        \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{DERIVATE DI UNIX}
+    \begin{itemize}[<+->]
+        \item nel 193 Richard Stallman lancia il progetto GNU 
+        \item nel 1991 Linus Torvalds completa il progetto con Linux
+        \item Linux è un kernel, si appoggia allo userspace di MINIX
+    \end{itemize}
+\end{frame}
+\begin{frame}
+    \frametitle{DERIVATE DI BSD}
+    \begin{itemize}[<+->]
+        \item FreeBSD, OpenBSD, NetBSD, DragonFlyBSD
+        \item macOS (dal 2001) (kernel:XNU) 
+        \item XNU = microkernel Mach + kernel monolitico BSD
+        \item vari frameworks (Java e molti altri)
+        \item Aqua = ambiente grafico 
+    \end{itemize}
+\end{frame}
+
+
+\begin{frame}
+    \begin{columns}[t]
+        \column{.5\textwidth}
+            \centering
+            \includegraphics[width=5cm,height=3.5cm]{netbsd}\\
+            \includegraphics[width=5cm,height=4cm]{dragonfly}
+        \column{.5\textwidth}
+            \centering
+            \includegraphics[width=5cm,height=4cm]{freebsd}\\ 
+            \includegraphics[width=5cm,height=3cm]{openbsd}
+    \end{columns}
+\end{frame}
+\begin{frame}
+    \begin{figure}
+        \begin{center}
+            \includegraphics[width=0.3\textwidth]{macos}                   
+        \end{center}
+    \end{figure}
+\end{frame}
+
+
+
+
+\begin{frame}[plain]
+        \begin{figure}
+            \begin{center}
+                \includegraphics[width=0.7\textwidth]{unixtree.png}
+            \caption{\href{https://en.wikipedia.org/wiki/Unix\#/media/File:Unix_history-simple.svg}{\beamergotobutton{wiki image}}}
+        \end{center}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+    \frametitle{WON'T BE BIG AND PROFESSIONAL}
+    \begin{figure}
+            \begin{center}
+                \includegraphics[width=0.5\textwidth]{linux_announcement.jpg}
+                \caption{Linux announcement}
+            \end{center}
+    \end{figure}
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{NASCE, CRESCE, CORRE, PATCHA}
+        \begin{itemize}[<+->]
+            \item Linux comincia a crescere e vede i primi contributori
+            \item Torvalds abbandona MINIX e lo sostituisce con GNU (adottando la GPL)
+            \item a febbraio del 92 Orest Zborowski porta X11 sulla 0.12, arriva l' interfaccia grafica
+            \item Torvalds patcha subito (ingnorando alcuni problemi)
+            \item lo sviluppo continua e il team di sviluppo si ampia sempre di più.
+        \end{itemize}
+\end{frame}
+
+\begin{frame}[plain]
+    \begin{figure}
+        \begin{center}
+            \includegraphics[width=0.69\textwidth]{x}
+            \caption{x11, interfaccia grafica anni 90}         
+        \end{center}
+    \end{figure}
+\end{frame}
+
+
+\begin{frame}
+    \begin{figure}
+        \begin{center}
+            \includegraphics[width=0.7\textwidth]{size_lallo.png}                   
+        \end{center}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+    \begin{figure}
+        \begin{center}
+            \includegraphics[width=0.3\textwidth]{companies.png}
+            \caption{Top 15 contributors}
+        \end{center}
+    \end{figure}
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{NECESSITA' DI UN VCS}
+        \begin{figure}
+            \includegraphics[width=0.55\textwidth]{designer.jpg}
+        \end{figure}    
+\end{frame}
+
+\begin{frame}
+    \frametitle{IL TEAM DI SVILUPPO E I VCS}
+        \begin{itemize}[<+->]
+            \item Torvalds non vuole usare SVN (Subversion)
+            \item tarball+patches $>>$ SVN
+            \item il team usa BitKeeper come source control
+            \item Andrew Tridgell "reversa" BitKeeper, al team di sviluppo del kernel è ritirata la possibilità di usare il software gratuitamente
+            \item Linus inizia a scrivere un suo sistema di version control (GIT)
+        \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \begin{figure}
+        \includegraphics[width=0.5\textwidth]{git.png}
+        \caption{Linus Torvalds decide di scrivere un VCS}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+    \frametitle{GIT, A VERSION CONTROL SYSTEM}
+        un software di version control permette:
+        \begin{itemize}[<+->]
+            \item a ognuno di avere una copia del progetto senza avere accesso a internet
+            \item di tenere traccia delle versioni (ma va?)
+            \item di tornare alle versioni precedenti di un file/di un intero progetto
+            \item di confrontare diverse versioni di uno stesso file
+            \item di lavorare in team senza scambiare file e sovrascrivere cose
+            \item di lavorare a modifiche/migliorie indiviudualmente e poi unirle al resto
+        \end{itemize}
+\end{frame}
+
+\begin{frame} 
+    \frametitle{GIT,GITHUB}
+        \begin{columns}
+            \begin{column}{0.5\textwidth}
+                \begin{center}
+            \includegraphics[width=\textwidth]{gitt}
+                \end{center}
+        \end{column}
+        \begin{column}{0.5\textwidth}  
+                \begin{figure}
+                    \includegraphics[width=\textwidth]{github}
+                \end{figure}
+            \end{column}
+        \end{columns}
+    \end{frame}
+
+\begin{frame}
+    \frametitle{CONTROVERSIA SUL NOME GNU/LINUX}
+    \begin{itemize}[<+->]
+        \item GNU/Linux indica un OS basato su GNU con il kernel di Linux
+        \item il movimento OpenSource ha sempre chiamato questo sistema Linux
+        \item il movimento FreeSoftware da sempre rivendica il nome GNU/Linux
+        \item GNU/X11/Apache/Linux/TeX/Perl/Python/FreeCiv e sticazzi?
+        \item non ha senso sprecare il tempo in nomenclatura
+        \item in alcuni casi non si puo' usare GNU/Linux
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \begin{figure}
+        \includegraphics[width=0.4\textwidth]{debianbsd}
+        \caption{Debian GNU/kFreeBSD}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+    \begin{figure}
+        \includegraphics[width=0.8\textwidth]{android}
+        \caption{Android}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+    \begin{figure}
+        \includegraphics[width=0.35\textwidth]{mongolfiera}
+        \caption{Mongolfiera}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+    \frametitle{DISTRO LINUX}
+        \begin{itemize}[<+->]
+            \item il kernel è solo una piccola parte di ogni OS 
+            \item una distro linux è caratterizzata da:
+                \begin{itemize}[<+->]
+                    \item Linux (il kernel)
+                    \item system software e librerie
+                    \item server grafico
+                    \item dekstop enviroment
+                    \item package manager
+                    \item rolling vs. stable (stabilità vs bleeding edge updates)
+                    \item goals \& ethics
+                    \item target audience e community
+            
+                \end{itemize}
+        \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \begin{tikzpicture}[remember picture,overlay] 
+        \node[at=(current page.center)] {
+            \includegraphics[width=\paperwidth, height=\paperheight]{why.png}
+        };
+    \end{tikzpicture}   
+\end{frame}
+\begin{frame}
+    \begin{figure}
+        \includegraphics[width=0.35\textwidth]{tux1}
+        \caption{buon motivo \#0 per usare GNU/Linux}
+    \end{figure}
+\end{frame}
+\begin{frame}
+    \begin{figure}
+        \includegraphics[width=0.33\textwidth]{tux2}
+        \caption{buon motivo \#1 per usare GNU/Linux}
+    \end{figure}
+\end{frame}
+\begin{frame}
+    \begin{figure}
+        \includegraphics[width=0.4\textwidth]{tux3}
+        \caption{buon motivo \#2 per usare GNU/Linux}
+    \end{figure}
+\end{frame}
+\begin{frame}
+    \begin{figure}
+        \includegraphics[width=0.4\textwidth]{tux4}
+        \caption{buon motivo \#3 per usare GNU/Linux}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+    \frametitle{NO DAI, SUL SERIO}
+        \begin{itemize}[<+->]
+            \item bash, la shell
+            \item privacy
+            \item sicurezza (no virus, malware equellarobalì)
+            \item stabilità (no aggiornamenti a caso)
+            \item manutenzione
+            \item free (aggratis)
+            \item open source
+            \item customization
+            \item support/community
+            \item minimalismo, no junk
+            \item nuova vita a vecchi pc 
+            \item fa figo, soprattutto il terminale
+        \end{itemize}
+\end{frame}
+\end{document}
+ 
